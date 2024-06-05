@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Contoh Website</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="imk.js"></script>
+    <script
+      src="https://kit.fontawesome.com/c8e4d183c2.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <section>
+      <!--- navigation --->
+      <nav>
+        <!-- Letakkan JavaScript dan tag <script> tambahan di sini -->
+        <script>
+          document.addEventListener("DOMContentLoaded", function () {
+            var sliderButton = document.querySelector(".slider-button");
+
+            sliderButton.addEventListener("click", function () {
+              window.scrollTo({
+                top: window.innerHeight, // Menggulir ke bawah satu halaman
+                behavior: "smooth", // Efek smooth scroll
+              });
+            });
+          });
+        </script>
+        <!--- logo --->
+        <div class="logo-container">
+          <img src="logo.png" alt="Logo" class="logo-img" />
+          <div class="logo-text"><p>Pesona Wisata</p></div>
+        </div>
+        <!--- menu --->
+        <ul>
+          <li><a href="home.html">Beranda</a></li>
+          <li><a href="explore.html">Explore</a></li>
+          <li><a href="wisata.html">Tempat Wisata</a></li>
+          <li><a href="profil-kota.html">Profil Kota</a></li>
+        </ul>
+        <button class="slider-button">
+          <i class="fas fa-chevron-down"></i>
+        </button>
+      </nav>
+
+      <!--- text --->
+      <div class="text-container">
+        <br />
+        <p>Temukan Tempat Wisata</p>
+        <p>
+          Jelajahi berbagai ragam wisata satu kota bersama Explore Batam!!<br />
+          Temukan keindahan pesona wisata kota batam.
+        </p>
+        <button class="hire-btn"><a href="explore.html">Explore</a></button>
+      </div>
+      <!-- model -->
+      <img
+        alt="model"
+        class="model"
+        src="E:\CONTOH WEBSITE\images\aduhuchiha.png"
+      />
+    </section>
+    <!-- Services -->
+    <div class="services">
+      <!-- Text -->
+      <div class="services-text">
+        <p>Rekomendasi Tempat Wisata</p>
+      </div>
+      <!-- Slider -->
+      <div class="slider">
+        <button class="slider-button prev">&#10094;</button>
+        <div class="slider-wrapper">
+          <div class="slider-images">
+            <div class="slide">
+              <div class="box-1">
+                <img src="abg.png" alt="Pulau Abang" class="box-image" />
+                <p class="heading">Pulau Abang</p>
+              </div>
+              <div class="box-2">
+                <img src="mubut.png" alt="Pulau Mubut" class="box-image" />
+                <p class="heading">Pulau Mubut</p>
+              </div>
+              <div class="box-3">
+                <img src="oca.png" alt="Ocarina" class="box-image" />
+                <p class="heading">Ocarina</p>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="box-1">
+                <img src="new_image1.png" alt="New Image 1" class="box-image" />
+                <p class="heading">New Image 1</p>
+              </div>
+              <div class="box-2">
+                <img src="new_image2.png" alt="New Image 2" class="box-image" />
+                <p class="heading">New Image 2</p>
+              </div>
+              <div class="box-3">
+                <img src="new_image3.png" alt="New Image 3" class="box-image" />
+                <p class="heading">New Image 3</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="slider-button next">&#10095;</button>
+      </div>
+    </div>
+
+    <!--testimonials-->
+    <div class="testimoni">
+      <!--text-->
+      <div class="testimoni-text">
+        <p>Clients Who are Satisfied with Our Services...</p>
+      </div>
+
+      <div class="testimoni-col">
+        <div class="testimoni-1">
+          <img src="E:\CONTOH WEBSITE\images\johana.png" />
+          <div>
+            <p>
+              I am amazed by the level of professionalism and creativity this
+              services. I highly recommend their services to anyone seeking
+              top-notch solutions
+            </p>
+            <h3>Johanna</h3>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+        </div>
+
+        <div class="testimoni-2">
+          <img src="E:\CONTOH WEBSITE\images\zila.png" />
+          <div>
+            <p>
+              Their attention to detail and commitment to excellence are truly
+              remarkable. I am incredibly satisfied with the results they have
+              achieved for my business
+            </p>
+            <h3>Zila</h3>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer -->
+    <footer>
+      <p>How to Hire My Services?</p>
+
+      <!--paragraph-->
+      <p>
+        I work on projects with the best results and according to deadlines.
+        Guaranteed revisions and money back if you are not satisfied with my
+        work.
+      </p>
+      <!--social-->
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-whatsapp"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-tiktok"></i></a>
+      </div>
+
+      <!--copyright-->
+      <p class="copyright">Copyright by Nurul Huda</p>
+    </footer>
+  </body>
+</html>
